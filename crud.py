@@ -193,7 +193,23 @@ def atualizar (agd):
     # USAR A FUNÇÃO opcaoEscolhida, JÁ IMPLEMENTADA, PARA FAZER O MENU
 
 def listar (agd):
-    print("Aqui está todos os contatos existentes:")
+    if len(agd)==0:
+        print('Não há contatos cadastrados!')
+    else:
+        agd.sort(key=lambda contato: contato[0].upper())
+        print()
+        print("Lista de Contatos:")
+        print()
+        posicao=0
+        while posicao<len(agd):
+            print("Nome:",agd[posicao][0])
+            print("Aniversário:",agd[posicao][1])
+            print("Endereço:",agd[posicao][2])
+            print("Telefone:",agd[posicao][3])
+            print("Celular:",agd[posicao][4])
+            print("E-mail:",agd[posicao][5])
+            print("--------------------")
+            posicao+=1
     
     # implementar aqui a listagem de todos os dados de todos
     # os contatos cadastrados
