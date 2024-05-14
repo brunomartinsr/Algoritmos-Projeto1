@@ -23,8 +23,9 @@ def apresenteSe ():
     print('| AGENDA PESSOAL DE ANIVERSÁRIOS E FORMAS DE CONTATAR PESSOAS |')
     print('|                                                             |')
     print('| Prof André Luís dos Reis Gomes de Carvalho                  |')
+    print('| Grupo: Bruno Martins, Victor Hugo Cruz, Pedro Henrique      |')
     print('|                                                             |')
-    print('| Versão 1.0 de 12/abril/2024                                 |')
+    print('| Versão 2.0 de 06/maio/2024                                  |')
     print('|                                                             |')
     print('+-------------------------------------------------------------+')
 
@@ -123,6 +124,7 @@ def procurar (agd):
         posicao = procurar_nome[1]
 
         if achou:
+            print()
             print('Os dados atuais de', agd[posicao][0], 'são:')
             print('Aniversario:',agd[posicao][1])
             print('Endereco:',agd[posicao][2])
